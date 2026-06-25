@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>Register</title>
+
+<link rel="stylesheet"
+href="../static/css/common.css">
+
+<link rel="stylesheet"
+href="../static/css/register.css">
+
+</head>
+
+<body>
+
+<div class="register-box">
+
+<h1>Create Account</h1>
+
+<h3 id="roleTitle"></h3>
+
+<form id="registerForm">
+
+<input
+type="text"
+id="fullname"
+placeholder="Full Name"
+required>
+
+<input
+type="text"
+id="username"
+placeholder="Username"
+required>
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+required>
+
+<input
+type="password"
+id="confirm"
+placeholder="Confirm Password"
+required>
+
+<div class="show-password">
+
+<input
+type="checkbox"
+id="show">
+
+<label for="show">
+
+Show Password
+
+</label>
+
+</div>
+
+<button type="submit">
+
+Register
+
+</button>
+
+</form>
+
+<p>
+
+Already have an account?
+
+<a href="#" id="loginLink">
+
+Login
+
+</a>
+
+</p>
+
+</div>
+
+<script src="../static/js/register.js"></script>
+
+</body>
+
+</html>

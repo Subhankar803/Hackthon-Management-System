@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Member Dashboard</title>
+
+<link rel="stylesheet" href="../static/css/common.css">
+<link rel="stylesheet" href="../static/css/dashboard.css">
+<link rel="stylesheet" href="../static/css/member.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>Mind Hackers</h2>
+
+<ul>
+
+<li class="active">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-list-check"></i>
+
+My Tasks
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<div class="navbar">
+
+<div>
+
+<h1>
+
+Welcome Back 👋
+
+</h1>
+
+<p>
+
+Let's complete today's work.
+
+</p>
+
+</div>
+
+<div class="profile">
+
+<img src="../static/images/profile.png">
+
+<span>
+
+Member
+
+</span>
+
+</div>
+
+</div>
+
+<div class="welcome-card">
+
+<h2>
+
+Good Morning!
+
+</h2>
+
+<p>
+
+You have
+
+<b>
+
+5 Tasks
+
+</b>
+
+assigned today.
+
+</p>
+
+</div>
+
+<div class="card">
+
+    <div class="card-top">
+
+        <i class="fa-solid fa-list-check"></i>
+
+    </div>
+
+    <h3>Assigned</h3>
+
+    <h1 id="assigned">5</h1>
+
+</div>
+
+<div class="card">
+
+    <div class="card-top">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+    <h3>Completed</h3>
+
+    <h1 id="completed">2</h1>
+
+</div>
+
+<div class="card">
+
+    <div class="card-top">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+    </div>
+
+    <h3>Progress</h3>
+
+    <div class="progress-bar">
+
+        <div id="progressFill"></div>
+
+    </div>
+
+    <p id="progressText">0%</p>
+
+</div>
+
+<div class="card">
+
+    <div class="card-top">
+
+        <i class="fa-solid fa-clock"></i>
+
+    </div>
+
+    <h3>Pending</h3>
+
+    <h1 id="pending">3</h1>
+
+</div>
+
+<div class="deadline">
+
+<h2>
+
+Upcoming Deadline
+
+</h2>
+
+<p>
+
+Frontend UI
+
+</p>
+
+<small>
+
+28 June 2026
+
+</small>
+
+</div>
+
+<!-- My Tasks -->
+
+<div class="task-section">
+
+<div class="task-header">
+
+<h2>
+
+My Assigned Tasks
+
+</h2>
+
+</div>
+
+<div class="toolbar">
+
+<input
+
+type="text"
+
+id="searchTask"
+
+placeholder="Search Task">
+
+<select id="statusFilter">
+
+<option>
+
+All
+
+</option>
+
+<option>
+
+Pending
+
+</option>
+
+<option>
+
+In Progress
+
+</option>
+
+<option>
+
+Completed
+
+</option>
+
+</select>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Task</th>
+
+<th>Priority</th>
+
+<th>Deadline</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="memberTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../static/js/member.js"></script>
+
+<div class="modal" id="taskModal">
+
+<div class="modal-content">
+
+<h2>
+
+Task Details
+
+</h2>
+
+<p>
+
+<b>Task:</b>
+
+<span id="taskName"></span>
+
+</p>
+
+<p>
+
+<b>Priority:</b>
+
+<span id="taskPriority"></span>
+
+</p>
+
+<p>
+
+<b>Deadline:</b>
+
+<span id="taskDeadline"></span>
+
+</p>
+
+<p>
+
+<b>Status:</b>
+
+<span id="taskStatus"></span>
+
+</p>
+
+<div class="modal-buttons">
+
+<button id="completeTask">
+
+Mark Completed
+
+</button>
+
+<button id="closeModal">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="toast">
+
+Task Updated Successfully
+
+</div>
+
+</body>
+
+</html>

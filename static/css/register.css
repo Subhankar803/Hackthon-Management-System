@@ -1,0 +1,75 @@
+.register-box{
+
+width:450px;
+
+margin:50px auto;
+
+padding:40px;
+
+background:white;
+
+border-radius:12px;
+
+box-shadow:0 0 25px rgba(0,0,0,.15);
+
+}
+
+.register-box h1{
+
+text-align:center;
+
+margin-bottom:10px;
+
+}
+
+.register-box h3{
+
+text-align:center;
+
+margin-bottom:25px;
+
+color:#16A34A;
+
+}
+
+.register-box input{
+
+width:100%;
+
+padding:14px;
+
+margin-bottom:18px;
+
+border:1px solid #ddd;
+
+border-radius:6px;
+
+font-size:16px;
+
+}
+
+.register-box button{
+
+width:100%;
+
+padding:14px;
+
+background:#16A34A;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+.register-box button:hover{
+
+background:#15803D;
+
+}
