@@ -1,4 +1,4 @@
-# Mind Hackers Task Management System
+## Mind Hackers Task Management System
 
 ## Tech Stack
 
